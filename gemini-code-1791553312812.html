@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriVerdad | Mitos y Realidades de la Nutrición Diaria</title>
+    <!-- Enlace a los estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo"><i class="fa-solid fa-seedling"></i> Nutri<span>Verdad</span></a>
+            <nav class="nav-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#mitos">Mitos y Verdades</a>
+                <a href="#quiz">Test Nutricional</a>
+                <a href="#consejos">Consejos Diarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero / Principal -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Separa la Ciencia de los <span>Mitologismos Nutricionales</span></h1>
+            <p>Descubre qué hay de cierto en las creencias populares sobre la alimentación diaria. Basado en evidencia científica y nutrición basada en evidencia.</p>
+            <a href="#mitos" class="btn-primary">Explorar Mitos <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Sección de Mitos y Verdades -->
+    <section id="mitos" class="container section">
+        <div class="section-title">
+            <h2>Mitos y Verdades de la Diaria</h2>
+            <p>Usa el buscador o filtra por categorías para despejar tus dudas.</p>
+        </div>
+
+        <!-- Buscador Interactivo -->
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Busca un mito (ej. carbohidratos, agua, grasa)...">
+        </div>
+
+        <!-- Tarjetas de Mitos -->
+        <div class="cards-grid" id="mitosGrid">
+            
+            <!-- Tarjeta 1 -->
+            <div class="card mito-card" data-category="general">
+                <div class="card-header falso">
+                    <span class="badge">MITO</span>
+                    <h3>"Los carbohidratos engordan por la noche"</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>La Realidad:</strong> El cuerpo procesa los macronutrientes de la misma manera sin importar la hora del reloj. Lo que importa es el balance calórico total del día.</p>
+                    <span class="tag"><i class="fa-solid fa-tag"></i> General</span>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="card mito-card" data-category="hidratacion">
+                <div class="card-header verdadero">
+                    <span class="badge true">VERDAD</span>
+                    <h3>"Beber 2 litros de agua al día es una guía general"</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>La Realidad:</strong> Si bien es un estándar útil, las necesidades hídricas varían según peso, clima, actividad física y el agua contenida en los alimentos.</p>
+                    <span class="tag"><i class="fa-solid fa-tag"></i> Hidratación</span>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card mito-card" data-category="dietas">
+                <div class="card-header falso">
+                    <span class="badge">MITO</span>
+                    <h3>"Los productos 'detox' limpian tu organismo"</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>La Realidad:</strong> El hígado y los riñones son los encargados naturales de desintoxicar el cuerpo. Ningún jugo milagroso acelera este proceso biológico.</p>
+                    <span class="tag"><i class="fa-solid fa-tag"></i> Dietas</span>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="card mito-card" data-category="general">
+                <div class="card-header verdadero">
+                    <span class="badge true">VERDAD</span>
+                    <h3>"El desayuno no es la comida más importante del día"</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>La Realidad:</strong> Ninguna comida por sí sola tiene propiedades mágicas. Depende de tus preferencias personales y objetivos metabólicos.</p>
+                    <span class="tag"><i class="fa-solid fa-tag"></i> General</span>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="card mito-card" data-category="grasanimal">
+                <div class="card-header falso">
+                    <span class="badge">MITO</span>
+                    <h3>"Comer huevo aumenta drásticamente el colesterol"</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>La Realidad:</strong> El colesterol dietético tiene un impacto menor en el colesterol sanguíneo para la mayoría de las personas. El huevo es un alimento altamente nutritivo.</p>
+                    <span class="tag"><i class="fa-solid fa-tag"></i> Alimentos</span>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="card mito-card" data-category="dietas">
+                <div class="card-header verdadero">
+                    <span class="badge true">VERDAD</span>
+                    <h3>"Las dietas restrictivas a largo plazo fallan"</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>La Realidad:</strong> La adherencia es la clave del éxito nutricional. Los cambios sostenibles superan por mucho a las dietas de moda.</p>
+                    <span class="tag"><i class="fa-solid fa-tag"></i> Hábitos</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección Quiz / Cuestionario Interactivo -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Cuánto sabes de nutrición?</h2>
+                <p>Pon a prueba tus conocimientos con este mini test rápido.</p>
+            </div>
+
+            <div class="quiz-card" id="quizContainer">
+                <div id="questionBox">
+                    <h3 id="questionTitle">Pregunta 1 de 3</h3>
+                    <p id="questionText">¿Saltarse comidas ayuda a quemar grasa corporal más rápido?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-btn" onclick="checkAnswer(false)">Sí, acelera el metabolismo</button>
+                        <button class="quiz-btn" onclick="checkAnswer(true)">No, suele generar mayor ansiedad y pérdida de masa muscular</button>
+                    </div>
+                </div>
+                <div id="resultBox" class="hidden">
+                    <h3 id="resultTitle">¡Resultado!</h3>
+                    <p id="resultText"></p>
+                    <button class="btn-primary" onclick="resetQuiz()">Reiniciar Test</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Consejos Prácticos -->
+    <section id="consejos" class="container section">
+        <div class="section-title">
+            <h2>Hábitos para tu Día a Día</h2>
+        </div>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <i class="fa-solid fa-carrot"></i>
+                <h4>Más Colores</h4>
+                <p>Incorpora vegetales de distintos colores en tu plato para asegurar variedad de antioxidantes.</p>
+            </div>
+            <div class="tip-card">
+                <i class="fa-solid fa-bed"></i>
+                <h4>Sueño y Apetito</h4>
+                <p>Dormir menos de 7 horas altera las hormonas que regulan la saciedad (grelina y leptina).</p>
+            </div>
+            <div class="tip-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h4>Comer Consciente</h4>
+                <p>Evita pantallas al comer; mastica despacio para mejorar la digestión y el registro de saciedad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 NutriVerdad. Divulgación científica en nutrición y dietética.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
